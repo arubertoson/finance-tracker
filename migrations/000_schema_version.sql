@@ -1,0 +1,8 @@
+BEGIN TRANSACTION;
+
+CREATE TABLE schema_versions (
+    version INTEGER PRIMARY KEY,
+    applied_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+COMMIT; 
